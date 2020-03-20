@@ -1,3 +1,6 @@
 logs
 Gemfile.lock
-
+node_modules
+-v
+.vscode
+package-lock.json
