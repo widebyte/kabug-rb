@@ -2,3 +2,7 @@ logs/screenshots
 logs/*.json
 logs/*.html
 Gemfile.lock
+package-lock.json
+-v
+logs
+node_modules
