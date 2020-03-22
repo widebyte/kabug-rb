@@ -16,7 +16,7 @@ pipeline {
         stage ('Test') {
             steps {
                 echo 'Running regression tests'
-                echo 'bundle exec cucumber -p ci'
+                sh 'bundle exec cucumber -p ci'
                 cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'logs', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
             }
         }
